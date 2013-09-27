@@ -21,8 +21,6 @@ markov.parse_file PATH_TO_REG
 tweet_text = markov.generate_n_sentences(2)[0..character_count].gsub(/\s\w+$/,'')
 
 markov.save_dictionary!
-
-print tweet_text
     
 # Connect to your Twitter account
 Twitter.configure do |config|
